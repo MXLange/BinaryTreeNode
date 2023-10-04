@@ -1,5 +1,5 @@
 import Node from "./Node.js"
-import { findSmaller, findBiggest, findPrevious, findNext } from "./utils.js";
+import { findSmaller, findBiggest, findPrevious, findNext, sumValues, countNodes, averageNodesValue } from "./utils.js";
 
 
 const nodeA = new Node(12);
@@ -42,20 +42,20 @@ let result
 // result = findSmaller(nodeG);
 // console.log(result.value)
 
-result = findBiggest(nodeA);
-console.log(result.value)
-result = findBiggest(nodeB);
-console.log(result.value)
-result = findBiggest(nodeC);
-console.log(result.value)
-result = findBiggest(nodeD);
-console.log(result.value)
-result = findBiggest(nodeE);
-console.log(result.value)
-result = findBiggest(nodeF);
-console.log(result.value)
-result = findBiggest(nodeG);
-console.log(result.value)
+// result = findBiggest(nodeA);
+// console.log(result.value)
+// result = findBiggest(nodeB);
+// console.log(result.value)
+// result = findBiggest(nodeC);
+// console.log(result.value)
+// result = findBiggest(nodeD);
+// console.log(result.value)
+// result = findBiggest(nodeE);
+// console.log(result.value)
+// result = findBiggest(nodeF);
+// console.log(result.value)
+// result = findBiggest(nodeG);
+// console.log(result.value)
 
 // result = findPrevious(nodeA, nodeA.value, nodeA);
 // console.log("A", result.value)
@@ -90,3 +90,48 @@ console.log(result.value)
 // console.log("G", result.value)
 // result = findNext(nodeH, nodeH.value, nodeH);
 // console.log("H", result.value)
+
+// result = sumValues(nodeA);
+// console.log(result)
+// result = sumValues(nodeB);
+// console.log(result)
+// result = sumValues(nodeC);
+// console.log(result)
+// result = sumValues(nodeD);
+// console.log(result)
+// result = sumValues(nodeE);
+// console.log(result)
+// result = sumValues(nodeF);
+// console.log(result)
+// result = sumValues(nodeG);
+// console.log(result)
+
+// result = countNodes(nodeA);
+// console.log(result)
+// result = countNodes(nodeB);
+// console.log(result)
+// result = countNodes(nodeC);
+// console.log(result)
+// result = countNodes(nodeD);
+// console.log(result)
+// result = countNodes(nodeE);
+// console.log(result)
+// result = countNodes(nodeF);
+// console.log(result)
+// result = countNodes(nodeG);
+// console.log(result)
+
+result = averageNodesValue(nodeA);
+console.log(result)
+result = averageNodesValue(nodeB);
+console.log(result)
+result = averageNodesValue(nodeC);
+console.log(result)
+result = averageNodesValue(nodeD);
+console.log(result)
+result = averageNodesValue(nodeE);
+console.log(result)
+result = averageNodesValue(nodeF);
+console.log(result)
+result = averageNodesValue(nodeG);
+console.log(result)
