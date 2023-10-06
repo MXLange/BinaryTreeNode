@@ -212,3 +212,12 @@ export function averageNodesValue(node) {
     let count = countNodes(node);
     return sum / count;
 }
+
+function buildBinarySearchTree(array, left, right) {
+    if(left > right) return null;
+    let midPoint = parseInt(left + (right - left) / 2);
+    let node = new Node(array[midPoint]);
+    node.left = buildBinarySearchTree(array, left, midPoint - 1);
+    node.rigth = buildBinarySearchTree(array, midPoint + 1, right);
+    return node;
+}
